@@ -1,9 +1,10 @@
 # ai-chat-pages/.gitignore
+.DS_Store
 /node_modules
 /.next/
 
-# /out/
-# /build
+/out/
+/build
 
 .env*
 *.env
