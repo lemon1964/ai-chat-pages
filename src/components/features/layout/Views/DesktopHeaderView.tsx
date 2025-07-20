@@ -64,8 +64,5 @@ export const DesktopHeaderView: FC<DesktopHeaderViewProps> = ({
     <button onClick={handleGoToRender} className="underline text-gray-300 hover:text-blue-400">
       Render
     </button>
-    <button onClick={handleGoToRender} className="underline text-gray-300 hover:text-blue-400">
-      Render
-    </button>
   </header>
 );
