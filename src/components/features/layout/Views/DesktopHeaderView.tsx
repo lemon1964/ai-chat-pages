@@ -2,7 +2,6 @@
 "use client";
 
 import { FC } from "react";
-// import Link from "next/link";
 import { MODEL_OPTIONS, ModelType } from "@/data/ModelOptions";
 import { localizationService } from "@/services/localizationService";
 
@@ -66,8 +65,5 @@ export const DesktopHeaderView: FC<DesktopHeaderViewProps> = ({
     <button onClick={handleGoToRender} className="underline text-gray-300 hover:text-blue-400">
       Render
     </button>
-    {/* <Link href="#" className="underline text-gray-300 hover:text-blue-400">
-      {localizationService.get("profile")}
-    </Link> */}
   </header>
 );

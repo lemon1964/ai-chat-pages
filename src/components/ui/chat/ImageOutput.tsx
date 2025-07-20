@@ -1,4 +1,4 @@
-// src/components/ui/chat/ImageOutput.tsx
+// ai-chat-page/src/components/ui/chat/ImageOutput.tsx
 "use client";
 
 import Image from "next/image";

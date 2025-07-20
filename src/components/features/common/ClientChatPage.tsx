@@ -20,8 +20,12 @@ export default function ClientChatPage() {
   const currentLanguage = useSelector((state: RootState) => state.language.current);
 
   useEffect(() => {
-    fetch("https://ai-stepik-next.onrender.com/", { mode: "no-cors" }).catch(() => {});
-    fetch("https://ai-stepik-django.onrender.com/healthz/", { mode: "no-cors" }).catch(() => {});
+    fetch("https://ai-stepik-next.onrender.com/", { mode: "no-cors" }).catch(e =>
+      console.debug("Frontend ping failed", e)
+    );
+    fetch("https://ai-stepik-django.onrender.com/healthz/", { mode: "no-cors" }).catch(e =>
+      console.debug("Backend ping failed", e)
+    );
   }, []);
 
   useEffect(() => {
@@ -35,19 +39,19 @@ export default function ClientChatPage() {
   return (
     <>
       <Notification />
-    <Layout onCategorySelect={(id, name) => setSelected({ id, name })}>
-      {selected ? (
-        <ChatWindowContainer
-          key={selected.id}
-          categoryId={selected.id}
-          categoryName={selected.name}
-        />
-      ) : (
-        <div className="flex-1 flex items-center justify-center text-gray-600">
-          Выберите категорию
-        </div>
-      )}
-    </Layout>
+      <Layout onCategorySelect={(id, name) => setSelected({ id, name })}>
+        {selected ? (
+          <ChatWindowContainer
+            key={selected.id}
+            categoryId={selected.id}
+            categoryName={selected.name}
+          />
+        ) : (
+          <div className="flex-1 flex items-center justify-center text-gray-600">
+            Выберите категорию
+          </div>
+        )}
+      </Layout>
     </>
   );
 }

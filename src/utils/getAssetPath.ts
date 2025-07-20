@@ -1,5 +1,8 @@
-// ai-chat-page/src/utils/getAssetPath.ts
-export const getAssetPath = (relativePath: string): string => {
-    const base = process.env.NEXT_PUBLIC_BASE_PATH || '/';
-    return base.endsWith('/') ? `${base}${relativePath}` : `${base}/${relativePath}`;
-  };
+// export const getAssetPath = (relativePath: string): string => {
+//   // Для GitHub Pages используем явный базовый путь
+//   if (process.env.NODE_ENV === 'production') {
+//       return `/ai-chat-pages/${relativePath}`;
+//   }
+//   // Для разработки используем корневой путь
+//   return `/${relativePath}`;
+// };

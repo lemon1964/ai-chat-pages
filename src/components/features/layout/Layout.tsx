@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { useEffect } from "react";
 import { audioService } from "@/services/audioService";
-import { getAssetPath } from "@/utils/getAssetPath";
+import { formatFileUrl } from "@/utils/formatFileUrl";
 
 export type LayoutProps = {
   children: ReactNode;
@@ -23,13 +23,9 @@ export const Layout: FC<LayoutProps> = ({
   const selectedModel = useSelector((state: RootState) => state.model.selectedModel);
 
   useEffect(() => {
-    audioService.playMusic(getAssetPath('music/vikont.mp3'));
+    audioService.playMusic(formatFileUrl('music/vikont.mp3'));
     return () => void audioService.stopMusic();
   }, []);
-  // useEffect(() => {
-  //   audioService.playMusic("/music/vikont.mp3");
-  //   return () => audioService.stopMusic();
-  // }, []);
   
   const handleCategory = (id: string, name: string) => {
     onCategorySelect(id, name);
