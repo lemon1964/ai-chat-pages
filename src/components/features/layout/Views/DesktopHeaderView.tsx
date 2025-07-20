@@ -2,7 +2,7 @@
 "use client";
 
 import { FC } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import { MODEL_OPTIONS, ModelType } from "@/data/ModelOptions";
 import { localizationService } from "@/services/localizationService";
 
@@ -12,6 +12,7 @@ export interface DesktopHeaderViewProps {
   onChangeLanguage: (lang: "ru" | "en") => void;
   onChangeModelType: (type: ModelType) => void;
   onChangeModel: (id: string) => void;
+  handleGoToRender: () => void;
 }
 
 export const DesktopHeaderView: FC<DesktopHeaderViewProps> = ({
@@ -20,6 +21,7 @@ export const DesktopHeaderView: FC<DesktopHeaderViewProps> = ({
   onChangeLanguage,
   onChangeModelType,
   onChangeModel,
+  handleGoToRender,
 }) => (
   <header className="hidden md:flex sticky top-0 z-40 bg-gray-800 px-4 py-3 items-center justify-between">
     <div className="flex gap-2">
@@ -61,8 +63,11 @@ export const DesktopHeaderView: FC<DesktopHeaderViewProps> = ({
       </select>
     </div>
 
-    <Link href="#" className="underline text-gray-300 hover:text-blue-400">
+    <button onClick={handleGoToRender} className="underline text-gray-300 hover:text-blue-400">
+      Render
+    </button>
+    {/* <Link href="#" className="underline text-gray-300 hover:text-blue-400">
       {localizationService.get("profile")}
-    </Link>
+    </Link> */}
   </header>
 );

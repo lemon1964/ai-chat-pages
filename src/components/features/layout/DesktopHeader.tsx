@@ -15,18 +15,15 @@ import { DesktopHeaderView } from "./Views/DesktopHeaderView";
 export interface DesktopHeaderProps {
   modelType: ModelType;
   selectedModel: string;
+  handleGoToRender: () => void
 }
 
 export const DesktopHeader: FC<DesktopHeaderProps> = ({
   modelType,
   selectedModel,
+  handleGoToRender
 }) => {
   const dispatch = useDispatch<AppDispatch>();
-
-  // useEffect(() => {
-  //   audioService.playMusic("/music/vikont.mp3");
-  //   return () => audioService.stopMusic();
-  // }, []);
 
   const handleLanguageChange = (lang: "ru" | "en") => {
     dispatch(languageActions.setLanguage(lang));
@@ -40,6 +37,7 @@ export const DesktopHeader: FC<DesktopHeaderProps> = ({
       onChangeLanguage={handleLanguageChange}
       onChangeModelType={type => dispatch(modelActions.setModelType(type))}
       onChangeModel={id => dispatch(modelActions.setModel(id))}
+      handleGoToRender={handleGoToRender}
     />
   );
 };

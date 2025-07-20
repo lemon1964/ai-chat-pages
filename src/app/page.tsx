@@ -1,4 +1,4 @@
-// src/app/page.tsx
+// ai-chat-page/src/app/page.tsx
 
 import ClientChatPage from "@features/common/ClientChatPage";
 

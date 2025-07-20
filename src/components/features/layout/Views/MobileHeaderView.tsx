@@ -2,7 +2,7 @@
 "use client";
 
 import { FC } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import { MODEL_OPTIONS, ModelType } from "@/data/ModelOptions";
 import { localizationService } from "@/services/localizationService";
 
@@ -13,6 +13,7 @@ export interface MobileHeaderViewProps {
   onChangeLanguage: (lang: "ru" | "en") => void;
   onChangeModelType: (type: ModelType) => void;
   onChangeModel: (id: string) => void;
+  handleGoToRender: () => void;
 }
 
 export const MobileHeaderView: FC<MobileHeaderViewProps> = ({
@@ -22,6 +23,7 @@ export const MobileHeaderView: FC<MobileHeaderViewProps> = ({
   onChangeLanguage,
   onChangeModelType,
   onChangeModel,
+  handleGoToRender,
 }) => (
   <header className="md:hidden flex items-center justify-between bg-gray-800 px-3 py-2 shadow">
     <button
@@ -73,8 +75,11 @@ export const MobileHeaderView: FC<MobileHeaderViewProps> = ({
       </div>
     </div>
 
-    <Link href="#" className="text-white text-lg">
+    <button onClick={handleGoToRender} className="text-white text-lg">
+      📡
+    </button>
+    {/* <Link href="#" className="text-white text-lg">
       🧑
-    </Link>
+    </Link> */}
   </header>
 );

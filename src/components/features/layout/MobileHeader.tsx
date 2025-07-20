@@ -14,12 +14,14 @@ export interface MobileHeaderProps {
   modelType: ModelType;
   selectedModel: string;
   onMenuToggle: () => void;
+  handleGoToRender: () => void
 }
 
 export const MobileHeader: FC<MobileHeaderProps> = ({
   modelType,
   selectedModel,
   onMenuToggle,
+  handleGoToRender
 }) => {
   const dispatch = useDispatch<AppDispatch>();
 
@@ -36,6 +38,7 @@ export const MobileHeader: FC<MobileHeaderProps> = ({
       onChangeLanguage={handleLanguageChange}
       onChangeModelType={type => dispatch(modelActions.setModelType(type))}
       onChangeModel={id => dispatch(modelActions.setModel(id))}
+      handleGoToRender={handleGoToRender}
     />
   );
 };

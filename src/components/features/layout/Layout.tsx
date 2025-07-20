@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { useEffect } from "react";
 import { audioService } from "@/services/audioService";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export type LayoutProps = {
   children: ReactNode;
@@ -22,13 +23,22 @@ export const Layout: FC<LayoutProps> = ({
   const selectedModel = useSelector((state: RootState) => state.model.selectedModel);
 
   useEffect(() => {
-    audioService.playMusic("/music/vikont.mp3");
-    return () => audioService.stopMusic();
+    audioService.playMusic(getAssetPath('music/vikont.mp3'));
+    return () => void audioService.stopMusic();
   }, []);
+  // useEffect(() => {
+  //   audioService.playMusic("/music/vikont.mp3");
+  //   return () => audioService.stopMusic();
+  // }, []);
   
   const handleCategory = (id: string, name: string) => {
     onCategorySelect(id, name);
     setMenuOpen(false);
+  };
+
+  const handleGoToRender = () => {
+    audioService.stopMusic();
+    window.open("https://ai-stepik-next.onrender.com/", "_blank");
   };
 
   return (
@@ -37,10 +47,13 @@ export const Layout: FC<LayoutProps> = ({
         onMenuToggle={() => setMenuOpen((o) => !o)}
         modelType={modelType}
         selectedModel={selectedModel}
+        handleGoToRender={handleGoToRender}
       />
       <DesktopHeader
         modelType={modelType}
         selectedModel={selectedModel}
+        handleGoToRender={handleGoToRender}
+
       />
       <div className="flex flex-1 overflow-hidden min-h-0">
         <aside className="hidden md:block md:w-1/5 border-r overflow-y-auto p-4">
