@@ -23,7 +23,7 @@ export const Layout: FC<LayoutProps> = ({
   const selectedModel = useSelector((state: RootState) => state.model.selectedModel);
 
   useEffect(() => {
-    audioService.playMusic(formatFileUrl('music/vikont.mp3'));
+    audioService.playMusic(formatFileUrl('music/polonaise.mp3'));
     return () => void audioService.stopMusic();
   }, []);
   
