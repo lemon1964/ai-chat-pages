@@ -1,4 +1,4 @@
-// ai-chat-next/src/components/features/chat/CategoryContainer.tsx
+// src/components/features/chat/CategoryContainer.tsx
 "use client";
 
 import { FC } from "react";

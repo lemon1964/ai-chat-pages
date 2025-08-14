@@ -1,4 +1,4 @@
-// ai-chat-next/src/components/ui/common/ModalAudio.tsx
+// src/components/ui/common/ModalAudio.tsx
 "use client";
 import { FC, ReactNode } from "react";
 import { localizationService } from "@/services/localizationService";

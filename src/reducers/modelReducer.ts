@@ -1,12 +1,11 @@
-// src/reducers/modelReducer.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type ModelType = 'text' | 'code' | 'image';
+type ModelType = "text" | "code" | "image";
 
 interface ModelState {
-    modelType: ModelType;
-    selectedModel: string;
-  }
+  modelType: ModelType;
+  selectedModel: string;
+}
 
 const initialState: ModelState = {
   modelType: "text",
@@ -16,7 +15,7 @@ const initialState: ModelState = {
 function getDefaultModelForType(type: ModelType): string {
   const models = {
     text: "deepseek_qwen3",
-    code: "llama3_coder",
+    code: "openai/o4-mini",
     image: "flux_schnell_free",
   };
   return models[type];

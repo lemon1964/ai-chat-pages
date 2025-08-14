@@ -4,12 +4,10 @@ import { Howl } from "howler";
 class AudioService {
   private musicVolume: number;
   private music: Howl | null;
-  private currentLanguage: string;
 
   constructor() {
     this.musicVolume = 0.5;
     this.music = null;
-    this.currentLanguage = "ru-RU"; // Язык по умолчанию
   }
 
   playMusic(path: string): void {
@@ -37,10 +35,6 @@ class AudioService {
     if (this.music) {
       this.music.volume(this.musicVolume);
     }
-  }
-
-  setSpeechLanguage(language: string): void {
-    this.currentLanguage = language;
   }
 }
 

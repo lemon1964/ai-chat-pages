@@ -1,4 +1,3 @@
-// src/reducers/notificationReducer.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { AppDispatch } from "@/store/store";
 

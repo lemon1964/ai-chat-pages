@@ -1,4 +1,4 @@
-// ai-chat-next/src/components/features/common/SoundVolume.tsx
+// src/components/features/common/SoundVolume.tsx
 "use client";
 import { FC, useState, useEffect } from "react";
 import { localizationService } from "@/services/localizationService";
@@ -23,7 +23,7 @@ const SoundVolume: FC = () => {
           max={1}
           step={0.05}
           value={musicVol}
-          onChange={(e) => {
+          onChange={e => {
             const v = parseFloat(e.target.value);
             setMusicVol(v);
             audioService.setMusicVolume(v);

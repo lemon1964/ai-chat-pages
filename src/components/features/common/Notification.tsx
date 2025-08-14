@@ -1,4 +1,4 @@
-// ai-chat-next/src/components/features/common/Notification.tsx
+// src/components/features/common/Notification.tsx
 "use client";
 
 import { useSelector } from "react-redux";
@@ -19,7 +19,9 @@ const Notification = () => {
       : "bg-transparent";
 
   return (
-    <div className={`fixed top-4 right-4 p-3 rounded-lg z-50 text-white shadow-lg ${bgColor}`}>
+    <div
+      className={`fixed top-4 right-4 z-50 p-3 rounded-lg text-white shadow-lg transition-opacity duration-300 ${bgColor}`}
+    >
       {notification.message}
     </div>
   );

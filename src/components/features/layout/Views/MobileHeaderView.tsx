@@ -1,8 +1,7 @@
-// ai-chat-next/src/components/features/layout/Views/MobileHeaderView.tsx
+// src/components/features/layout/Views/MobileHeaderView.tsx
 "use client";
 
 import { FC } from "react";
-// import Link from "next/link";
 import { MODEL_OPTIONS, ModelType } from "@/data/ModelOptions";
 import { localizationService } from "@/services/localizationService";
 
@@ -74,12 +73,8 @@ export const MobileHeaderView: FC<MobileHeaderViewProps> = ({
         </select>
       </div>
     </div>
-
     <button onClick={handleGoToRender} className="text-white text-lg">
       📡
     </button>
-    {/* <Link href="#" className="text-white text-lg">
-      🧑
-    </Link> */}
   </header>
 );

@@ -1,4 +1,4 @@
-// ai-chat-next/src/components/features/chat/ChatWindowContainer.tsx
+// src/components/features/chat/ChatWindowContainer.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";

@@ -1,4 +1,3 @@
-// ai-chat-next/tsconfig.json
 {
   "compilerOptions": {
     "target": "ES2017",
@@ -19,7 +18,7 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".", // корень проекта
+    "baseUrl": ".", 
     "paths": {
       "@/*": ["./src/*"],
       "@features/*": ["./src/components/features/*"],

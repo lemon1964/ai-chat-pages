@@ -1,4 +1,4 @@
-// ai-chat-next/src/components/features/layout/Views/DesktopHeaderView.tsx
+// src/components/features/layout/Views/DesktopHeaderView.tsx
 "use client";
 
 import { FC } from "react";
@@ -61,6 +61,7 @@ export const DesktopHeaderView: FC<DesktopHeaderViewProps> = ({
         ))}
       </select>
     </div>
+
     <button onClick={handleGoToRender} className="underline text-gray-300 hover:text-blue-400">
       Render
     </button>
