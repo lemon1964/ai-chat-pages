@@ -3,8 +3,8 @@
 /node_modules
 /.next/
 
-# /out/
-# /build
+/out/
+/build
 
 .env*
 *.env
