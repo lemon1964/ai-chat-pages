@@ -18,81 +18,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
+      # - name: Install Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      #     cache: "npm"
 
-      - name: Cache deps
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.npm
-            node_modules
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+      # - name: Cache deps
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: |
+      #       ~/.npm
+      #       node_modules
+      #     key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install dependencies
-        run: npm ci
+      # - name: Install dependencies
+      #   run: npm ci
 
-      - name: Build project
-        env:
-          NEXT_PUBLIC_BASE_PATH: /ai-chat-pages/
-        run: npm run build
+      # - name: Build project
+      #   env:
+      #     NEXT_PUBLIC_BASE_PATH: /ai-chat-pages/
+      #   run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-          publish_branch: gh-pages
-          enable_jekyll: false
-# # ai-chat-page/.github/workflows/deploy.yml
-# name: Deploy to GitHub Pages
-
-# on:
-#   push:
-#     branches:
-#       - main
-
-# permissions:
-#   contents: write
-#   pages: write
-#   id-token: write
-
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: 📂 Checkout repository
-#         uses: actions/checkout@v4
-
-#       - name: ♻ Install Node.js
-#         uses: actions/setup-node@v4
-#         with:
-#           node-version: 20
-#           cache: "npm"
-
-#       - name: 🗄 Cache deps
-#         uses: actions/cache@v3
-#         with:
-#           path: |
-#             ~/.npm
-#             node_modules
-#           key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-
-#       - name: 📋 Install dependencies
-#         run: npm ci
-
-#       - name: 🏠 Build project
-#         env:
-#           NEXT_PUBLIC_BASE_PATH: /ai-chat-pages/
-#         run: npm run build
-
-#       - name: 🔄 Deploy to GitHub Pages
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: ./out
-#           publish_branch: gh-pages
-#           enable_jekyll: false
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./out
+      #     publish_branch: gh-pages
+      #     enable_jekyll: false
