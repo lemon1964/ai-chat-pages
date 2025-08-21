@@ -1,4 +1,28 @@
-// src/components/ui/chat/ImageOutput.tsx
+
+
+
+// "use client";
+
+// import Image from "next/image";
+// import { formatFileUrl } from "@/utils/formatFileUrl";
+
+// export const ImageOutput = ({ url }: { url: string }) => {
+//   return (
+//     <div className="absolute inset-0 flex items-center justify-center p-4">
+//       <div className="relative w-full h-full">
+//         <Image
+//           src={formatFileUrl(url)}
+//           alt="AI generated image"
+//           fill
+//           sizes="100vw"
+//           className="object-cover rounded-lg shadow-md"
+//           priority
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
 "use client";
 
 import Image from "next/image";

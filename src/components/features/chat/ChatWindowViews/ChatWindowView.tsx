@@ -24,7 +24,7 @@ export const ChatWindowView: FC<Props> = ({
   setAudioModalOpen,
 }) => (
   <div className="flex flex-col flex-1 min-h-0">
-    <div className="p-4 border-b flex items-center justify-between">
+    <div className="p-4 border-b flex items-center justify-between bg-black">
       <h2 className="text-2xl font-bold break-words max-w-[70%] whitespace-normal line-clamp-2 text-white">
         {categoryName}
       </h2>

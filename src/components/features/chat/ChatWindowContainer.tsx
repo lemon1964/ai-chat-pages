@@ -12,11 +12,12 @@ type Props = {
 
 export default function ChatWindowContainer({ categoryId, categoryName }: Props) {
   const [audioModalOpen, setAudioModalOpen] = useState(false);
+  const topRef = useRef<HTMLDivElement | null>(null);
   const bottomRef = useRef<HTMLDivElement | null>(null);
   const messages = demoMessages[categoryId] || [];
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    topRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [categoryId]);
 
   return (
