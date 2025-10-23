@@ -6,32 +6,39 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="canonical" href="https://lemon1964.github.io/ai-chat-pages/stories/" />
   <style>
-    body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:24px;background:#0b0e11;color:#e5e7eb}
-    a{color:#60a5fa;text-decoration:none}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-    .card{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:16px}
-    .title{font-weight:700;margin-bottom:8px}
+    :root{--bg:#0b0e11;--card:#111827;--line:#1f2937;--text:#e5e7eb}
+    *{box-sizing:border-box}
+    body{margin:24px;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Arial,sans-serif}
+    h1{margin:0 0 16px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+    .thumb{aspect-ratio:16/9;background:#0f172a;display:block}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .meta{padding:12px 14px}
+    .title{font-weight:700;margin:0 0 6px 0}
+    .a{color:#60a5fa;text-decoration:none}
   </style>
 </head>
 <body>
   <h1>Course 3 — Web Stories</h1>
   <div class="grid">
-    <div class="card">
-      <div class="title">A · Chat</div>
-      <a href="./c3-a-chat.html">Открыть</a>
-    </div>
-    <div class="card">
-      <div class="title">B · Mermaid</div>
-      <a href="./c3-b-mermaid.html">Открыть</a>
-    </div>
-    <div class="card">
-      <div class="title">C · Payments</div>
-      <a href="./c3-c-pay.html">Открыть</a>
-    </div>
-    <div class="card">
-      <div class="title">D · SEO</div>
-      <a href="./c3-d-seo.html">Открыть</a>
-    </div>
+    <a class="card" href="./c3-a-chat.html">
+      <span class="thumb"><img src="./assets/c3-chat-1200x630.webp" alt="Story A — Chat"></span>
+      <div class="meta"><p class="title">A · Chat</p><span class="a">Открыть</span></div>
+    </a>
+    <a class="card" href="./c3-b-mermaid.html">
+      <span class="thumb"><img src="./assets/c3-mermaid-1200x630.webp" alt="Story B — Mermaid"></span>
+      <div class="meta"><p class="title">B · Mermaid</p><span class="a">Открыть</span></div>
+    </a>
+    <a class="card" href="./c3-c-pay.html">
+      <span class="thumb"><img src="./assets/c3-pay-1200x630.webp" alt="Story C — Payments"></span>
+      <div class="meta"><p class="title">C · Payments</p><span class="a">Открыть</span></div>
+    </a>
+    <a class="card" href="./c3-d-seo.html">
+      <span class="thumb"><img src="./assets/c3-seo-1200x630.webp" alt="Story D — SEO"></span>
+      <div class="meta"><p class="title">D · SEO</p><span class="a">Открыть</span></div>
+    </a>
   </div>
 </body>
 </html>
+
