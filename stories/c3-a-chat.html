@@ -2,83 +2,88 @@
 <html ⚡ lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Course 3 — Chat (Story A)</title>
+  <title>Course 3 — Chat & Aggregator</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-  <meta name="description" content="Вход через веб-сторис: демо-чат (Next.js), подсветка кода и быстрый старт." />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://lemon1964.github.io/ai-chat-pages/stories/c3-a-chat.html" />
-
-  <!-- OG -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Course 3 — Chat (Story A)" />
-  <meta property="og:description" content="Демо-чат, подсветка кода и быстрый старт." />
-  <meta property="og:image" content="https://lemon1964.github.io/ai-chat-pages/stories/assets/c3-chat-1200x630.webp" />
-
-  <!-- AMP -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
   <style amp-boilerplate>
-    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both; animation:-amp-start 8s steps(1,end) 0s 1 normal both}
     @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
-  <noscript>
-    <style amp-boilerplate>
-      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-    </style>
-  </noscript>
-  
+  <noscript><style amp-boilerplate>
+    body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+  </style></noscript>
+
   <style amp-custom>
     .layer{padding:24px;align-content:end}
-    .title{font-size:28px;font-weight:700;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4)}
-    .text{margin-top:10px;font-size:16px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+    .title{font-size:28px;font-weight:800;color:#93c5fd;text-shadow:0 2px 10px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
+    .text{margin-top:10px;font-size:16px;color:#a7f3d0;text-shadow:0 1px 6px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
   </style>
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","inLanguage":"ru","isPartOf":"https://lemon1964.github.io/ai-chat-pages/stories/","name":"Course 3 — Chat & Aggregator","url":"https://lemon1964.github.io/ai-chat-pages/stories/c3-a-chat.html"}
+  </script>
 </head>
 <body>
 <amp-story standalone
-  title="Course 3 — Chat"
+  title="Course 3 — Chat & Aggregator"
   publisher="lemon1964"
-  publisher-logo-src="./assets/LogoMain-256x256.png"
-  poster-portrait-src="./assets/c3-chat-1080x1920.webp"
+  publisher-logo-src="./assets/poets-night-1080x1080.webp"
+  poster-portrait-src="./assets/c3-chat-code-1080x1920.webp"
   poster-square-src="./assets/poets-night-1080x1080.webp"
   poster-landscape-src="./assets/c3-chat-1200x630.webp">
 
+  <!-- cover -->
   <amp-story-page id="cover">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-chat-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Chat UI"></amp-img>
+      <amp-img src="./assets/c3-chat-code-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Chat UI"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h1 class="title">Демо-чат</h1>
-      <p class="text">Next.js, локализация, подсветка кода, аудио. Минимум кликов — максимум пользы.</p>
+      <h1 class="title">Chat + Aggregator</h1>
+      <p class="text">Единый фронт: сообщения, код с подсветкой, голос. Один UI — любые провайдеры ИИ.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <amp-story-page id="code">
+  <!-- integrations -->
+  <amp-story-page id="integrations">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-chat-code-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Code highlight"></amp-img>
+      <amp-img src="./assets/c3-chat-code-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Models"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Код и пояснения</h2>
-      <p class="text">Сообщения → форматирование → рендер Markdown/Code прямо в потоке.</p>
+      <h2 class="title">Подключаем модели</h2>
+      <p class="text">Конфиги, ключи, ротация. Легко менять модели без правок в UI.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
+  <!-- free models -->
+  <amp-story-page id="free">
+    <amp-story-grid-layer template="fill">
+      <amp-img src="./assets/c3-chat-code-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Free models"></amp-img>
+    </amp-story-grid-layer>
+    <amp-story-grid-layer template="vertical" class="layer">
+      <h2 class="title">Старт без бюджета</h2>
+      <p class="text">Встроен слой для бесплатных LLM. Текст, код и изображения — «из коробки».</p>
+    </amp-story-grid-layer>
+  </amp-story-page>
+
+  <!-- CTA -->
   <amp-story-page id="cta">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-chat-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Start chat"></amp-img>
+      <amp-img src="./assets/c3-seo-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Open demo"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Открыть чат</h2>
-      <p class="text">Сервер может «просыпаться» 30–60 сек.</p>
+      <h2 class="title">Открыть демо</h2>
+      <p class="text">Посмотри живой чат и структуру проекта.</p>
     </amp-story-grid-layer>
     <amp-story-cta-layer>
-      <a href="https://ai-chat-frontend-wy6h.onrender.com/?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_a" target="_top">Открыть чат</a>
+      <a href="https://lemon1964.github.io/ai-chat-pages/?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_a" target="_top" title="Перейти на витрину">Перейти на витрину</a>
     </amp-story-cta-layer>
   </amp-story-page>
 

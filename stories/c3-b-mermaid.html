@@ -2,86 +2,88 @@
 <html ⚡ lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Course 3 — Mermaid (Story B)</title>
+  <title>Course 3 — Mermaid Generator</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-  <meta name="description" content="Генерация диаграмм из текста: flow/sequence/class, предпросмотр и экспорт SVG." />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://lemon1964.github.io/ai-chat-pages/stories/c3-b-mermaid.html" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Course 3 — Mermaid (Story B)" />
-  <meta property="og:description" content="Генерация диаграмм из текста и предпросмотр." />
-  <meta property="og:image" content="https://lemon1964.github.io/ai-chat-pages/stories/assets/c3-mermaid-1200x630.webp" />
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
   <style amp-boilerplate>
-    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both; animation:-amp-start 8s steps(1,end) 0s 1 normal both}
     @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
-  <noscript>
-    <style amp-boilerplate>
-      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-    </style>
-  </noscript>
-  
-  <style amp-custom>.layer{padding:24px;align-content:end}.title{font-size:28px;font-weight:700;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4)}.text{margin-top:10px;font-size:16px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.4)}</style>
+  <noscript><style amp-boilerplate>
+    body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+  </style></noscript>
+
+  <style amp-custom>
+    .layer{padding:24px;align-content:end}
+    .title{font-size:28px;font-weight:800;color:#93c5fd;text-shadow:0 2px 10px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
+    .text{margin-top:10px;font-size:16px;color:#a7f3d0;text-shadow:0 1px 6px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
+  </style>
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","inLanguage":"ru","isPartOf":"https://lemon1964.github.io/ai-chat-pages/stories/","name":"Course 3 — Mermaid Generator","url":"https://lemon1964.github.io/ai-chat-pages/stories/c3-b-mermaid.html"}
+  </script>
 </head>
 <body>
 <amp-story standalone
-  title="Course 3 — Mermaid"
+  title="Course 3 — Mermaid Generator"
   publisher="lemon1964"
-  publisher-logo-src="./assets/LogoMain-256x256.png"
+  publisher-logo-src="./assets/poets-night-1080x1080.webp"
   poster-portrait-src="./assets/c3-mermaid-1080x1920.webp"
   poster-square-src="./assets/poets-night-1080x1080.webp"
   poster-landscape-src="./assets/c3-mermaid-1200x630.webp">
 
+  <!-- cover -->
   <amp-story-page id="cover">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-mermaid-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Mermaid generator"></amp-img>
+      <amp-img src="./assets/c3-mermaid-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Mermaid text to diagram"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h1 class="title">Mermaid из текста</h1>
-      <p class="text">Опиши словами — получи код + предпросмотр.</p>
+      <h1 class="title">Текст → Mermaid</h1>
+      <p class="text">Пишешь описание — получаешь диаграмму. Быстро и красиво.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
+  <!-- preview -->
   <amp-story-page id="preview">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-mermaid-preview-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Preview"></amp-img>
+      <amp-img src="./assets/c3-mermaid-preview-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Preview & edit"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Предпросмотр</h2>
-      <p class="text">Сразу видно результат, есть экспорт SVG.</p>
+      <h2 class="title">Превью и правка</h2>
+      <p class="text">Код диаграммы на виду: правь узлы, стили и подписи — мгновенный ререндер.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <amp-story-page id="examples1">
+  <!-- monetization -->
+  <amp-story-page id="money">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-mermaid-pie-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Pie"></amp-img>
+      <amp-img src="./assets/c3-mermaid-pie-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Monetization"></amp-img>
+    </amp-story-grid-layer>
+    <amp-story-grid-layer template="vertical" class="layer">
+      <h2 class="title">Монетизация</h2>
+      <p class="text">Квота и SVG как платные артефакты. Библиотека диаграмм + поиск.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <amp-story-page id="examples2">
-    <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-mermaid-gantt-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Gantt"></amp-img>
-    </amp-story-grid-layer>
-  </amp-story-page>
-
+  <!-- CTA -->
   <amp-story-page id="cta">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-mermaid-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Open Mermaid"></amp-img>
+      <amp-img src="./assets/c3-mermaid-gantt-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Try Mermaid"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Открыть генератор</h2>
-      <p class="text">Может потребоваться 30–60 сек на «пробуждение».</p>
+      <h2 class="title">Попробовать генерацию</h2>
+      <p class="text">Открой страницу Mermaid и собери свою диаграмму.</p>
     </amp-story-grid-layer>
     <amp-story-cta-layer>
-      <a href="https://ai-chat-frontend-wy6h.onrender.com/mermind?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_b" target="_top">Открыть Mermaid</a>
+      <a href="https://ai-chat-frontend-wy6h.onrender.com/mermind?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_b" target="_top" title="Перейти к Mermaid">Перейти к Mermaid</a>
     </amp-story-cta-layer>
   </amp-story-page>
 

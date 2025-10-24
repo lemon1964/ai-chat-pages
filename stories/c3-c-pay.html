@@ -2,86 +2,88 @@
 <html ⚡ lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Course 3 — Payments (Story C)</title>
+  <title>Course 3 — Payments (YooKassa)</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-  <meta name="description" content="ЮKassa: платёж → вебхуки → активация подписки. Демостраница с тарифами и купонами." />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://lemon1964.github.io/ai-chat-pages/stories/c3-c-pay.html" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Course 3 — Payments (Story C)" />
-  <meta property="og:description" content="Платёж, вебхуки и подписки." />
-  <meta property="og:image" content="https://lemon1964.github.io/ai-chat-pages/stories/assets/c3-pay-1200x630.webp" />
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
   <style amp-boilerplate>
-    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-         animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both; animation:-amp-start 8s steps(1,end) 0s 1 normal both}
     @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
-  <noscript>
-    <style amp-boilerplate>
-      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-    </style>
-  </noscript>
-  
-  <style amp-custom>.layer{padding:24px;align-content:end}.title{font-size:28px;font-weight:700;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.4)}.text{margin-top:10px;font-size:16px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.4)}</style>
+  <noscript><style amp-boilerplate>
+    body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+  </style></noscript>
+
+  <style amp-custom>
+    .layer{padding:24px;align-content:end}
+    .title{font-size:28px;font-weight:800;color:#93c5fd;text-shadow:0 2px 10px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
+    .text{margin-top:10px;font-size:16px;color:#a7f3d0;text-shadow:0 1px 6px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
+  </style>
+
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","inLanguage":"ru","isPartOf":"https://lemon1964.github.io/ai-chat-pages/stories/","name":"Course 3 — Payments (YooKassa)","url":"https://lemon1964.github.io/ai-chat-pages/stories/c3-c-pay.html"}
+  </script>
 </head>
 <body>
 <amp-story standalone
-  title="Course 3 — Payments"
+  title="Course 3 — Payments (YooKassa)"
   publisher="lemon1964"
-  publisher-logo-src="./assets/LogoMain-256x256.png"
+  publisher-logo-src="./assets/poets-night-1080x1080.webp"
   poster-portrait-src="./assets/c3-pay-start-1080x1920.webp"
   poster-square-src="./assets/poets-night-1080x1080.webp"
   poster-landscape-src="./assets/c3-pay-1200x630.webp">
 
-  <amp-story-page id="start">
+  <!-- cover -->
+  <amp-story-page id="cover">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-start-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Pricing"></amp-img>
+      <amp-img src="./assets/c3-pay-start-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Payments cover"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h1 class="title">Экран оплаты</h1>
-      <p class="text">Тарифы, купоны и тестовые карты.</p>
+      <h1 class="title">Оплата и подписки</h1>
+      <p class="text">Приложение payment: создание сессии, редирект, статусы.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <amp-story-page id="process">
-    <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-process-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Payment form"></amp-img>
-    </amp-story-grid-layer>
-  </amp-story-page>
-
-  <amp-story-page id="result">
-    <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-result-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Success"></amp-img>
-    </amp-story-grid-layer>
-  </amp-story-page>
-
+  <!-- webhooks -->
   <amp-story-page id="webhooks">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-seq-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Webhooks sequence"></amp-img>
+      <amp-img src="./assets/c3-seq-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Webhooks"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Вебхуки</h2>
-      <p class="text">waiting_for_capture → capture → succeeded → активируем подписку.</p>
+      <h2 class="title">Вебхуки в дело</h2>
+      <p class="text">waiting_for_capture / succeeded / canceled / refund — журнал событий и защита от дублей.</p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <amp-story-page id="cta">
+  <!-- subscriptions -->
+  <amp-story-page id="subs">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-start-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Open payment"></amp-img>
+      <amp-img src="./assets/c3-pay-process-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Subscriptions"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Открыть оплату</h2>
-      <p class="text">Демо-режим. Сервер может «просыпаться».</p>
+      <h2 class="title">Рекуррент и купоны</h2>
+      <p class="text">Сохранённый способ оплаты, автосписания, промокоды, лимиты.</p>
+    </amp-story-grid-layer>
+  </amp-story-page>
+
+  <!-- CTA -->
+  <amp-story-page id="cta">
+    <amp-story-grid-layer template="fill">
+      <amp-img src="./assets/c3-pay-result-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Open payment demo"></amp-img>
+    </amp-story-grid-layer>
+    <amp-story-grid-layer template="vertical" class="layer">
+      <h2 class="title">Открыть оплату (демо)</h2>
+      <p class="text">Посмотри UX формы.</p>
     </amp-story-grid-layer>
     <amp-story-cta-layer>
-      <a href="https://ai-chat-frontend-wy6h.onrender.com/payment?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_c" target="_top">Перейти к оплате</a>
+      <a href="https://ai-chat-frontend-wy6h.onrender.com/payment?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_c" target="_top" title="Перейти к оплате">Перейти к оплате</a>
     </amp-story-cta-layer>
   </amp-story-page>
 
