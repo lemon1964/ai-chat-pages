@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lemon1964.github.io/ai-chat-pages/sitemap.xml
+Sitemap: https://lemon1964.github.io/ai-chat-pages/sitemap.txt
