@@ -1,97 +1,130 @@
-<!-- ai-chat-page/public/stories/c3-c-pay.html -->
 <!doctype html>
+<!-- ai-chat-pages/public/stories/c3-c-pay.html -->
 <html ⚡ lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Payments (ЮKassa)</title>
+  <title>C · Payments (ЮKassa)</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Оплата, вебхуки, автосписания, журнал событий." />
   <link rel="canonical" href="https://lemon1964.github.io/ai-chat-pages/stories/c3-c-pay.html" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Payments (ЮKassa)" />
-  <meta property="og:description" content="Результаты поиска, индексация, карты сайта, мета и UTM." />
+  <meta property="og:title" content="C · Payments (ЮKassa)" />
+  <meta property="og:description" content="Оплата, вебхуки, автосписания, журнал событий." />
   <meta property="og:image" content="https://lemon1964.github.io/ai-chat-pages/stories/assets/c3-pay-1200x630.webp" />
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
   <style amp-boilerplate>
-    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both; animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+         -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+         -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+         animation:-amp-start 8s steps(1,end) 0s 1 normal both}
     @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
-  <noscript><style amp-boilerplate>
-    body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-  </style></noscript>
+  <noscript>
+    <style amp-boilerplate>
+      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+    </style>
+  </noscript>
 
   <style amp-custom>
     .layer{padding:24px;align-content:end}
-    .title{font-size:28px;font-weight:800;color:#93c5fd;text-shadow:0 2px 10px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
-    .text{margin-top:10px;font-size:16px;color:#a7f3d0;text-shadow:0 1px 6px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
+    .title{font-size:28px;font-weight:800;color:#86efac} /* зелёный акцент */
+    .text{margin-top:10px;font-size:16px;color:#e5e7eb}
+    .pill{
+      display:inline-block;
+      background:rgba(0,0,0,.55);
+      padding:8px 12px;
+      border-radius:12px;
+    }
+    .cta{
+      margin-top:14px;
+      display:inline-block;
+      background:#22c55e;
+      color:#052e2b;
+      font-weight:700;
+      padding:10px 14px;
+      border-radius:12px;
+      text-decoration:none;
+    }
   </style>
 
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebPage","inLanguage":"ru","isPartOf":"https://lemon1964.github.io/ai-chat-pages/stories/","name":"Payments (YooKassa)","url":"https://lemon1964.github.io/ai-chat-pages/stories/c3-c-pay.html"}
+  {"@context":"https://schema.org","@type":"WebPage","inLanguage":"ru",
+   "isPartOf":"https://lemon1964.github.io/ai-chat-pages/stories/",
+   "name":"C · Payments (ЮKassa)",
+   "url":"https://lemon1964.github.io/ai-chat-pages/stories/c3-c-pay.html"}
   </script>
 </head>
 <body>
 <amp-story standalone
-  title="Payments (ЮKassa)"
+  title="C · Payments (ЮKassa)"
   publisher="lemon1964"
   publisher-logo-src="./assets/LogoMain-256x256.png"
   poster-portrait-src="./assets/c3-pay-hero-1080x1920.webp"
   poster-square-src="./assets/c3-pay-1080x1080.webp"
   poster-landscape-src="./assets/c3-pay-1200x630.webp">
 
-  <!-- cover -->
+  <!-- hero -->
   <amp-story-page id="cover">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-hero-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Payments cover"></amp-img>
+      <amp-img src="./assets/c3-pay-hero-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="Payments hero"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h1 class="title">Оплата и подписки</h1>
-      <p class="text">Приложение payment: создание сессии, редирект, статусы.</p>
+      <h1 class="title"><span class="pill">ЮKassa: платежи & вебхуки</span></h1>
+      <p class="text"><span class="pill">Первичный платёж, подтверждение, статусы.</span></p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- webhooks -->
-  <amp-story-page id="webhooks">
+  <!-- slide 1 -->
+  <amp-story-page id="s1">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-1-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Webhooks"></amp-img>
+      <amp-img src="./assets/c3-pay-1-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="Choose plan"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Вебхуки в дело</h2>
-      <p class="text">waiting_for_capture / succeeded / canceled / refund — журнал событий и защита от дублей.</p>
+      <h2 class="title"><span class="pill">Тарифы & купоны</span></h2>
+      <p class="text"><span class="pill">Месячная/годовая/бессрочная. Промокоды и скидки.</span></p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- subscriptions -->
-  <amp-story-page id="subs">
+  <!-- slide 2 -->
+  <amp-story-page id="s2">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-2-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Subscriptions"></amp-img>
+      <amp-img src="./assets/c3-pay-2-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="Payment form"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Рекуррент и купоны</h2>
-      <p class="text">Сохранённый способ оплаты, автосписания, промокоды, лимиты.</p>
+      <h2 class="title"><span class="pill">Форма оплаты</span></h2>
+      <p class="text">
+        <span class="pill">Посмотри UX формы. Redirect-сессия, тестовые карты.</span>
+      </p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- CTA -->
+  <!-- slide 3 + CTA -->
   <amp-story-page id="cta">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-pay-3-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Open payment demo"></amp-img>
+      <amp-img src="./assets/c3-pay-3-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="Hooks & result"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Открыть оплату (демо)</h2>
-      <p class="text">Посмотри UX формы.</p>
+      <h2 class="title"><span class="pill">В производство</span></h2>
+      <p class="text">
+        <span class="pill">Вебхуки: waiting_for_capture → succeeded. Журнал событий.</span>
+      </p>
+
+      <a class="cta"
+         href="https://ai-chat-frontend-wy6h.onrender.com/payment?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_c_slide4"
+         target="_top">Открыть оплату</a>
     </amp-story-grid-layer>
-    <amp-story-cta-layer>
-      <a href="https://ai-chat-frontend-wy6h.onrender.com/payment?utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_c" target="_top" title="Перейти к оплате">Перейти к оплате</a>
-    </amp-story-cta-layer>
   </amp-story-page>
 
 </amp-story>

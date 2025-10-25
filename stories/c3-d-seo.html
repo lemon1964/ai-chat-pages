@@ -1,97 +1,134 @@
-<!-- ai-chat-page/public/stories/c3-d-seo.html -->
 <!doctype html>
+<!-- ai-chat-pages/public/stories/c3-d-seo.html -->
 <html ⚡ lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Deploy & SEO</title>
+  <title>D · Deploy & SEO</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Деплой на Render и GitHub Pages, индексация, карты сайта." />
   <link rel="canonical" href="https://lemon1964.github.io/ai-chat-pages/stories/c3-d-seo.html" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Deploy & SEO" />
-  <meta property="og:description" content="Результаты поиска, индексация, карты сайта, мета и UTM." />
+  <meta property="og:title" content="D · Deploy & SEO" />
+  <meta property="og:description" content="Render, GitHub Pages, индексация, Web Stories, метки трафика." />
   <meta property="og:image" content="https://lemon1964.github.io/ai-chat-pages/stories/assets/c3-seo-1200x630.webp" />
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
 
   <style amp-boilerplate>
-    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both; -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both; animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+         -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+         -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+         animation:-amp-start 8s steps(1,end) 0s 1 normal both}
     @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
-  <noscript><style amp-boilerplate>
-    body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-  </style></noscript>
+  <noscript>
+    <style amp-boilerplate>
+      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+    </style>
+  </noscript>
 
   <style amp-custom>
     .layer{padding:24px;align-content:end}
-    .title{font-size:28px;font-weight:800;color:#93c5fd;text-shadow:0 2px 10px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
-    .text{margin-top:10px;font-size:16px;color:#a7f3d0;text-shadow:0 1px 6px rgba(0,0,0,.5);background:rgba(0,0,0,.35);padding:.25rem .5rem;border-radius:.5rem;display:inline-block}
+    .title{font-size:28px;font-weight:800;color:#fde047} /* жёлтый акцент */
+    .text{margin-top:10px;font-size:16px;color:#e5e7eb}
+    .pill{
+      display:inline-block;
+      background:rgba(0,0,0,.55);
+      padding:8px 12px;
+      border-radius:12px;
+    }
+    .cta{
+      margin-top:14px;
+      display:inline-block;
+      background:#fde047;
+      color:#1e1e00;
+      font-weight:700;
+      padding:10px 14px;
+      border-radius:12px;
+      text-decoration:none;
+    }
   </style>
 
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebPage","inLanguage":"ru","isPartOf":"https://lemon1964.github.io/ai-chat-pages/stories/","name":"Deploy & SEO","url":"https://lemon1964.github.io/ai-chat-pages/stories/c3-d-seo.html"}
+  {"@context":"https://schema.org","@type":"WebPage","inLanguage":"ru",
+   "isPartOf":"https://lemon1964.github.io/ai-chat-pages/stories/",
+   "name":"D · Deploy & SEO",
+   "url":"https://lemon1964.github.io/ai-chat-pages/stories/c3-d-seo.html"}
   </script>
 </head>
 <body>
 <amp-story standalone
-  title="Deploy & SEO"
+  title="D · Deploy & SEO"
   publisher="lemon1964"
   publisher-logo-src="./assets/LogoMain-256x256.png"
   poster-portrait-src="./assets/c3-seo-hero-1080x1920.webp"
   poster-square-src="./assets/c3-seo-1080x1080.webp"
   poster-landscape-src="./assets/c3-seo-1200x630.webp">
 
-  <!-- cover -->
+  <!-- hero -->
   <amp-story-page id="cover">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-seo-hero-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Deploy & SEO"></amp-img>
+      <amp-img src="./assets/c3-seo-hero-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="SEO hero"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h1 class="title">Микро-SaaS по рельсам</h1>
-      <p class="text">Next.js чат → DRF backend → ЮKassa → Mermaid → деплой.</p>
+      <h1 class="title"><span class="pill">Деплой & индексация</span></h1>
+      <p class="text">
+        <span class="pill">Render (фронт/бэк) + GitHub Pages (витрина) + карты сайта.</span>
+      </p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- full contour -->
-  <amp-story-page id="contour">
+  <!-- slide 1 -->
+  <amp-story-page id="s1">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-seo-1-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Full contour"></amp-img>
+      <amp-img src="./assets/c3-seo-1-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="Sitemap / robots"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Полный контур</h2>
-      <p class="text">Авторизация, платежи и вебхуки, генерация диаграмм, экспорт, витрина на Pages.</p>
+      <h2 class="title"><span class="pill">SEO-минимум</span></h2>
+      <p class="text">
+        <span class="pill">sitemap.xml, robots.txt, canonical. Боты понимают структуру.</span>
+      </p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- deploy & stories -->
-  <amp-story-page id="deploy">
+  <!-- slide 2 -->
+  <amp-story-page id="s2">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-seo-2-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Deploy + Stories"></amp-img>
+      <amp-img src="./assets/c3-seo-2-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="Search Console / index"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">Render + Web Stories</h2>
-      <p class="text">Прод на Render, каталог на GitHub Pages, AMP Web Stories + карты сайта.</p>
+      <h2 class="title"><span class="pill">Web Stories в поиске</span></h2>
+      <p class="text">
+        <span class="pill">История — это уже посадочная. Клики идут с мобилы и десктопа.</span>
+      </p>
     </amp-story-grid-layer>
   </amp-story-page>
 
-  <!-- CTA -->
+  <!-- slide 3 + CTA -->
   <amp-story-page id="cta">
     <amp-story-grid-layer template="fill">
-      <amp-img src="./assets/c3-seo-3-1080x1920.webp" width="1080" height="1920" layout="fill" alt="Course CTA"></amp-img>
+      <amp-img src="./assets/c3-seo-3-1080x1920.webp"
+               width="1080" height="1920" layout="fill" alt="Course / monetization"></amp-img>
     </amp-story-grid-layer>
     <amp-story-grid-layer template="vertical" class="layer">
-      <h2 class="title">−20% на курс</h2>
-      <p class="text">Пошагово собери платный микросервис с Mermaid.</p>
+      <h2 class="title"><span class="pill">Дальше — ваша идея</span></h2>
+      <p class="text">
+        <span class="pill">Полигон курса: AI → бэкенд → ЮKassa → деплой → Web Stories → трафик.</span>
+      </p>
+
+      <a class="cta"
+         href="https://stepik.org/a/253246/pay?promo=5b26f0129fa670d7&utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_d_slide4"
+         target="_top">Перейти на курс</a>
     </amp-story-grid-layer>
-    <amp-story-cta-layer>
-      <a href="https://stepik.org/a/253246/pay?promo=5b26f0129fa670d7&utm_source=webstories&utm_medium=amp&utm_campaign=c3_story_d" target="_top" title="Получить доступ">Получить доступ</a>
-    </amp-story-cta-layer>
   </amp-story-page>
 
 </amp-story>
